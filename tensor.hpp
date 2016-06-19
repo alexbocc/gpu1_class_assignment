@@ -66,6 +66,10 @@ public:
     return dim[i];
   }
 
+  void makeZeroMatrix(){
+    std::fill(mat.begin(), mat.end(), 0);
+  }
+
 
   // 2D matrix
   T& operator()(std::size_t i1, std::size_t i2){
